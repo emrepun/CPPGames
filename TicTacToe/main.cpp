@@ -1,6 +1,12 @@
 #include <iostream>
+#include "TicTacToeGame.h"
+
+using namespace std;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+    TicTacToeGame game;
+    game.playGame();
+
     return 0;
 }
