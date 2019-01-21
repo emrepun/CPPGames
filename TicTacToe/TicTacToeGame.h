@@ -21,6 +21,7 @@ private:
 
     bool placeMarker(int x, int y, char currentPlayer);
 
+    bool checkForVictory(char currentPlayer);
 
 
     void clearBoard();
