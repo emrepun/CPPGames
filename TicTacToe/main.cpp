@@ -4,7 +4,6 @@
 using namespace std;
 
 int main() {
-
     char input;
     bool isCompleted = false;
 
@@ -19,8 +18,6 @@ int main() {
             isCompleted = true;
         }
     }
-
-
-
+    
     return 0;
 }
