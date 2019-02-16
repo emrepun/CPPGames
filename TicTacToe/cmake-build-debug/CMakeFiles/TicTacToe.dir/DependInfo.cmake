@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/emrehavan/Desktop/C++ Games/CPP Games/TicTacToe/TicTacToeGame.cpp" "/Users/emrehavan/Desktop/C++ Games/CPP Games/TicTacToe/cmake-build-debug/CMakeFiles/TicTacToe.dir/TicTacToeGame.cpp.o"
   "/Users/emrehavan/Desktop/C++ Games/CPP Games/TicTacToe/main.cpp" "/Users/emrehavan/Desktop/C++ Games/CPP Games/TicTacToe/cmake-build-debug/CMakeFiles/TicTacToe.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

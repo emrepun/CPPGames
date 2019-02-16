@@ -1,0 +1,4 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/cmake-build-debug

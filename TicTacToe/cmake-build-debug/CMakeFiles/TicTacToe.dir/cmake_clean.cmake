@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TicTacToe.dir/main.cpp.o"
+  "CMakeFiles/TicTacToe.dir/TicTacToeGame.cpp.o"
   "TicTacToe.pdb"
   "TicTacToe"
 )

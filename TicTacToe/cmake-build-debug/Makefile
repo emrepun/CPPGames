@@ -123,6 +123,33 @@ TicTacToe/fast:
 	$(MAKE) -f CMakeFiles/TicTacToe.dir/build.make CMakeFiles/TicTacToe.dir/build
 .PHONY : TicTacToe/fast
 
+TicTacToeGame.o: TicTacToeGame.cpp.o
+
+.PHONY : TicTacToeGame.o
+
+# target to build an object file
+TicTacToeGame.cpp.o:
+	$(MAKE) -f CMakeFiles/TicTacToe.dir/build.make CMakeFiles/TicTacToe.dir/TicTacToeGame.cpp.o
+.PHONY : TicTacToeGame.cpp.o
+
+TicTacToeGame.i: TicTacToeGame.cpp.i
+
+.PHONY : TicTacToeGame.i
+
+# target to preprocess a source file
+TicTacToeGame.cpp.i:
+	$(MAKE) -f CMakeFiles/TicTacToe.dir/build.make CMakeFiles/TicTacToe.dir/TicTacToeGame.cpp.i
+.PHONY : TicTacToeGame.cpp.i
+
+TicTacToeGame.s: TicTacToeGame.cpp.s
+
+.PHONY : TicTacToeGame.s
+
+# target to generate assembly for a file
+TicTacToeGame.cpp.s:
+	$(MAKE) -f CMakeFiles/TicTacToe.dir/build.make CMakeFiles/TicTacToe.dir/TicTacToeGame.cpp.s
+.PHONY : TicTacToeGame.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... TicTacToe"
+	@echo "... TicTacToeGame.o"
+	@echo "... TicTacToeGame.i"
+	@echo "... TicTacToeGame.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

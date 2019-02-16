@@ -59,10 +59,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/emrehavan/Desktop/C++Games/FirstGame
+CMAKE_SOURCE_DIR = "/Users/emrehavan/Desktop/C++ Games/CPP Games/FirstGame"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/emrehavan/Desktop/C++Games/FirstGame/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/emrehavan/Desktop/C++ Games/CPP Games/FirstGame/cmake-build-debug"
 
 #=============================================================================
 # Target rules for target CMakeFiles/FirstGame.dir
@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /Users/emrehavan/Desktop/C++Games/FirstGame/cmake-build-debug
 CMakeFiles/FirstGame.dir/all:
 	$(MAKE) -f CMakeFiles/FirstGame.dir/build.make CMakeFiles/FirstGame.dir/depend
 	$(MAKE) -f CMakeFiles/FirstGame.dir/build.make CMakeFiles/FirstGame.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/emrehavan/Desktop/C++Games/FirstGame/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target FirstGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/emrehavan/Desktop/C++ Games/CPP Games/FirstGame/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target FirstGame"
 .PHONY : CMakeFiles/FirstGame.dir/all
 
 # Include target in all.
@@ -81,9 +81,9 @@ all: CMakeFiles/FirstGame.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/FirstGame.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/emrehavan/Desktop/C++Games/FirstGame/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/emrehavan/Desktop/C++ Games/CPP Games/FirstGame/cmake-build-debug/CMakeFiles" 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/FirstGame.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/emrehavan/Desktop/C++Games/FirstGame/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/emrehavan/Desktop/C++ Games/CPP Games/FirstGame/cmake-build-debug/CMakeFiles" 0
 .PHONY : CMakeFiles/FirstGame.dir/rule
 
 # Convenience name for target.

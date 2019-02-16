@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/emrehavan/Desktop/C++ Games/CPP Games/TicTacToe/TicTacToeGame.cpp
+TicTacToeGame.h
+/Users/emrehavan/Desktop/C++ Games/CPP Games/TicTacToe/TicTacToeGame.h
+iostream
+-
+
+/Users/emrehavan/Desktop/C++ Games/CPP Games/TicTacToe/TicTacToeGame.h
+

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/emrehavan/Desktop/C++Games/FirstGame/main.cpp" "/Users/emrehavan/Desktop/C++Games/FirstGame/cmake-build-debug/CMakeFiles/FirstGame.dir/main.cpp.o"
+  "/Users/emrehavan/Desktop/C++ Games/CPP Games/FirstGame/main.cpp" "/Users/emrehavan/Desktop/C++ Games/CPP Games/FirstGame/cmake-build-debug/CMakeFiles/FirstGame.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
