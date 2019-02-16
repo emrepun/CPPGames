@@ -19,8 +19,5 @@ int main() {
             isCompleted = true;
         }
     }
-
-
-
-    return 0;
 }
+
