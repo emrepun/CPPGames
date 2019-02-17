@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Enemy.cpp">
+			<Option target="RogueLike"/>
+		</Unit>
+		<Unit filename="/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Enemy.h">
+			<Option target="RogueLike"/>
+		</Unit>
 		<Unit filename="/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/GameSystem.cpp">
 			<Option target="RogueLike"/>
 		</Unit>

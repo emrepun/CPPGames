@@ -123,6 +123,33 @@ RogueLike/fast:
 	$(MAKE) -f CMakeFiles/RogueLike.dir/build.make CMakeFiles/RogueLike.dir/build
 .PHONY : RogueLike/fast
 
+Enemy.o: Enemy.cpp.o
+
+.PHONY : Enemy.o
+
+# target to build an object file
+Enemy.cpp.o:
+	$(MAKE) -f CMakeFiles/RogueLike.dir/build.make CMakeFiles/RogueLike.dir/Enemy.cpp.o
+.PHONY : Enemy.cpp.o
+
+Enemy.i: Enemy.cpp.i
+
+.PHONY : Enemy.i
+
+# target to preprocess a source file
+Enemy.cpp.i:
+	$(MAKE) -f CMakeFiles/RogueLike.dir/build.make CMakeFiles/RogueLike.dir/Enemy.cpp.i
+.PHONY : Enemy.cpp.i
+
+Enemy.s: Enemy.cpp.s
+
+.PHONY : Enemy.s
+
+# target to generate assembly for a file
+Enemy.cpp.s:
+	$(MAKE) -f CMakeFiles/RogueLike.dir/build.make CMakeFiles/RogueLike.dir/Enemy.cpp.s
+.PHONY : Enemy.cpp.s
+
 GameSystem.o: GameSystem.cpp.o
 
 .PHONY : GameSystem.o
@@ -240,6 +267,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... RogueLike"
+	@echo "... Enemy.o"
+	@echo "... Enemy.i"
+	@echo "... Enemy.s"
 	@echo "... GameSystem.o"
 	@echo "... GameSystem.i"
 	@echo "... GameSystem.s"

@@ -6,20 +6,18 @@
 
 #IncludeRegexTransform: 
 
-/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/GameSystem.cpp
-GameSystem.h
-/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/GameSystem.h
-
-/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/GameSystem.h
-iostream
+/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Enemy.cpp
+Enemy.h
+/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Enemy.h
+random
 -
-Player.h
-/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Player.h
-Level.h
-/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Level.h
+ctime
+-
+
+/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Enemy.h
 string
 -
-curses.h
+iostream
 -
 
 /Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Level.cpp
@@ -39,18 +37,8 @@ string
 -
 Player.h
 /Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Player.h
+Enemy.h
+/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Enemy.h
 
 /Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Player.h
-
-/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/main.cpp
-iostream
--
-cstdlib
--
-string
--
-curses.h
--
-GameSystem.h
-/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/GameSystem.h
 

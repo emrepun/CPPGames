@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RogueLike.dir/GameSystem.cpp.o"
   "CMakeFiles/RogueLike.dir/Player.cpp.o"
   "CMakeFiles/RogueLike.dir/Level.cpp.o"
+  "CMakeFiles/RogueLike.dir/Enemy.cpp.o"
   "RogueLike.pdb"
   "RogueLike"
 )

@@ -33,10 +33,10 @@ void Level::load(string fileName, Player &player) {
     file.close();
 
     // Process level
-    setPlayerPosition(player);
+    setInitialPlayerPosition(player);
 }
 
-void Level::setPlayerPosition(Player &player) {
+void Level::setInitialPlayerPosition(Player &player) {
     char tile;
 
     for (int i = 0; i < _levelData.size(); i++) {
@@ -44,8 +44,28 @@ void Level::setPlayerPosition(Player &player) {
             tile = _levelData[i][j];
 
             switch (tile) {
-                case '@':
+                case '@': //Player
                     player.setPosition(i, j);
+                    break;
+                case 'S': //Snake
+                    _enemies.push_back(Enemy("Snake", tile, 1, 3, 1, 10, 50));
+                    _enemies.back().setPosition(j,i);
+                    break;
+                case 'g': //goblin
+                    _enemies.push_back(Enemy("Goblin", tile, 2, 10, 5, 35, 150));
+                    _enemies.back().setPosition(j,i);
+                    break;
+                case 'O': //Oger
+                    _enemies.push_back(Enemy("Oger", tile, 4, 20, 20, 200, 500));
+                    _enemies.back().setPosition(j,i);
+                    break;
+                case 'B':
+                    _enemies.push_back(Enemy("Bandit", tile, 3, 15, 10, 100, 250));
+                    _enemies.back().setPosition(j,i);
+                    break;
+                case 'D': //Dragon
+                    _enemies.push_back(Enemy("Dragon", tile, 100, 2000, 20000, 2000, 1000000));
+                    _enemies.back().setPosition(j,i);
                     break;
                 default:
                     break;
@@ -94,6 +114,36 @@ void Level::movePlayer(char input, Player &player) {
     }
 }
 
+void Level::updateEnemies(Player &player) {
+    char aiMove;
+    int playerX;
+    int playerY;
+
+    int enemyX;
+    int enemyY;
+
+    player.getPosition(playerX, playerY);
+
+    for (int i = 0; i < _enemies.size(); i++) {
+        aiMove = _enemies[i].getMove(playerX, playerY);
+        _enemies[i].getPosition(enemyX, enemyY);
+        switch (aiMove) {
+            case 'w': // up
+                processEnemyMove(player, i, enemyX, enemyY - 1);
+                break;
+            case 's': // down
+                processEnemyMove(player, i, enemyX, enemyY + 1);
+                break;
+            case 'a': // left
+                processEnemyMove(player, i, enemyX - 1, enemyY);
+                break;
+            case 'd': // right
+                processEnemyMove(player, i, enemyX + 1, enemyY);
+                break;
+        }
+    }
+}
+
 char Level::getTile(int x, int y) {
     return _levelData[y][x];
 }
@@ -117,5 +167,95 @@ void Level::processPlayerMove(Player &player, int targetX, int targetY) {
             player.setPosition(targetX, targetY);
             setTile(playerX, playerY, '.');
             setTile(targetX, targetY, '@');
+            break;
+        default: //gonna be a monster
+            battleMonster(player, targetX, targetY);
+            break;
+
+    }
+}
+
+void Level::processEnemyMove(Player &player, int enemyIndex, int targetX, int targetY) {
+    int playerX;
+    int playerY;
+
+    int enemyX;
+    int enemyY;
+
+    _enemies[enemyIndex].getPosition(enemyX, enemyY);
+    player.getPosition(playerX, playerY);
+
+    char moveTile = getTile(targetX, targetY);
+
+    switch (moveTile) {
+        case '#':
+            printf("You ran into a wall!\n");
+            break;
+        case '.':
+            _enemies[enemyIndex].setPosition(targetX, targetY);
+            setTile(enemyX, enemyY, '.');
+            setTile(targetX, targetY, _enemies[enemyIndex].getTile());
+            break;
+        case '@':
+            battleMonster(player, enemyX, enemyY);
+            break;
+        default: //gonna be a monster
+            break;
+
+    }
+}
+
+void Level::battleMonster(Player &player, int targetX, int targetY) {
+    int enemyX;
+    int enemyY;
+    string enemyName;
+
+    int playerX;
+    int playerY;
+
+    player.getPosition(playerX, playerY);
+
+    int attackRoll;
+    int attackResult;
+
+    for (int i = 0; i < _enemies.size(); i++) {
+        _enemies[i].getPosition(enemyX, enemyY);
+        enemyName = _enemies[i].getName();
+
+        if (targetX == enemyX && targetY == enemyY) {
+            // Battle!
+            attackRoll = player.attack();
+            printf("\nPlayer attacked %s with a roll of %i\n", enemyName.c_str(), attackRoll);
+            attackResult = _enemies[i].takeDamage(attackRoll);
+
+            if (attackResult != 0) {
+                setTile(targetX, targetY, '.');
+                print();
+                printf("Monster died");
+
+                _enemies[i] = _enemies.back(); // removing hack
+                _enemies.pop_back(); //removed
+                i--; // so we dont skip
+
+                player.addExperience(attackResult);
+                return;
+            }
+
+            //Monster turn
+
+            attackRoll = _enemies[i].attack();
+            printf("%s attacked player with a roll of %i\n", enemyName.c_str(), attackRoll);
+            attackResult = player.takeDamage(attackRoll);
+
+            if (attackResult != 0) {
+                setTile(playerX, playerY, 'x');
+                print();
+                printf("You died!\n");
+
+                exit(0); // Game Over
+            }
+
+            return;
+        }
     }
 }
