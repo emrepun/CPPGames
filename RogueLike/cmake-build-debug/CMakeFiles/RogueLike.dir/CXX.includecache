@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/GameSystem.cpp
+GameSystem.h
+/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/GameSystem.h
+
+/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/GameSystem.h
+iostream
+-
+Player.h
+/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Player.h
+Level.h
+/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Level.h
+string
+-
+curses.h
+-
+
 /Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Level.cpp
 Level.h
 /Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Level.h
@@ -25,4 +41,16 @@ Player.h
 /Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Player.h
 
 /Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Player.h
+
+/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/main.cpp
+iostream
+-
+cstdlib
+-
+string
+-
+curses.h
+-
+GameSystem.h
+/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/GameSystem.h
 

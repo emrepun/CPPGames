@@ -33,7 +33,10 @@ void Level::load(string fileName, Player &player) {
     file.close();
 
     // Process level
+    setPlayerPosition(player);
+}
 
+void Level::setPlayerPosition(Player &player) {
     char tile;
 
     for (int i = 0; i < _levelData.size(); i++) {
@@ -49,7 +52,6 @@ void Level::load(string fileName, Player &player) {
             }
         }
     }
-
 }
 
 void Level::print() {

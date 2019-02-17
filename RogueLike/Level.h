@@ -12,6 +12,7 @@ class Level {
 public:
     Level();
 
+    void setPlayerPosition(Player &player);
     void load(string fileName, Player &player);
     void print();
     void movePlayer(char input, Player &player);
