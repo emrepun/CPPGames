@@ -150,6 +150,33 @@ GameSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/RogueLike.dir/build.make CMakeFiles/RogueLike.dir/GameSystem.cpp.s
 .PHONY : GameSystem.cpp.s
 
+Level.o: Level.cpp.o
+
+.PHONY : Level.o
+
+# target to build an object file
+Level.cpp.o:
+	$(MAKE) -f CMakeFiles/RogueLike.dir/build.make CMakeFiles/RogueLike.dir/Level.cpp.o
+.PHONY : Level.cpp.o
+
+Level.i: Level.cpp.i
+
+.PHONY : Level.i
+
+# target to preprocess a source file
+Level.cpp.i:
+	$(MAKE) -f CMakeFiles/RogueLike.dir/build.make CMakeFiles/RogueLike.dir/Level.cpp.i
+.PHONY : Level.cpp.i
+
+Level.s: Level.cpp.s
+
+.PHONY : Level.s
+
+# target to generate assembly for a file
+Level.cpp.s:
+	$(MAKE) -f CMakeFiles/RogueLike.dir/build.make CMakeFiles/RogueLike.dir/Level.cpp.s
+.PHONY : Level.cpp.s
+
 Player.o: Player.cpp.o
 
 .PHONY : Player.o
@@ -216,6 +243,9 @@ help:
 	@echo "... GameSystem.o"
 	@echo "... GameSystem.i"
 	@echo "... GameSystem.s"
+	@echo "... Level.o"
+	@echo "... Level.i"
+	@echo "... Level.s"
 	@echo "... Player.o"
 	@echo "... Player.i"
 	@echo "... Player.s"

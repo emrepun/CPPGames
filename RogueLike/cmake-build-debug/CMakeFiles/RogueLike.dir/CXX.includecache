@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Level.cpp
+Level.h
+/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Level.h
+fstream
+-
+iostream
+-
+string
+-
+
+/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Level.h
+vector
+-
+string
+-
+Player.h
+/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Player.h
+
+/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Player.h
+

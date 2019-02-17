@@ -86,6 +86,12 @@
 		<Unit filename="/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/GameSystem.h">
 			<Option target="RogueLike"/>
 		</Unit>
+		<Unit filename="/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Level.cpp">
+			<Option target="RogueLike"/>
+		</Unit>
+		<Unit filename="/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Level.h">
+			<Option target="RogueLike"/>
+		</Unit>
 		<Unit filename="/Users/emrehavan/Desktop/C++ Games/CPP Games/RogueLike/Player.cpp">
 			<Option target="RogueLike"/>
 		</Unit>

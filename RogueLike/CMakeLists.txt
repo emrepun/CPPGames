@@ -3,4 +3,4 @@ project(RogueLike)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(RogueLike main.cpp GameSystem.cpp GameSystem.h Player.cpp Player.h)
+add_executable(RogueLike main.cpp GameSystem.cpp GameSystem.h Player.cpp Player.h Level.cpp Level.h)
